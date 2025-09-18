@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konferencia>
+    <cim>Nemzetközi Informatikai Konferencia 2025</cim>
+    <helyszin>Budapest, Eötvös Lóránd Tudományegyetem</helyszin>
+    <datum>2025-11-10</datum>
+
+    <eloado>
+        <nev>Kovács Péter</nev>
+        <lakcim>Debrecen, Fő utca 12.</lakcim>
+        <adoszam>12345678-1-42</adoszam>
+    </eloado>
+
+    <hallgatok>
+        <hallgato>
+            <nev>Nagy László</nev>
+            <lakcim>Budapest, Bartók Béla út 22.</lakcim>
+        </hallgato>
+        <hallgato>
+            <nev>Tóth Eszter</nev>
+            <lakcim>Győr, Baross út 7.</lakcim>
+        </hallgato>
+    </hallgatok>
+</konferencia>
