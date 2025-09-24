@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Neptunkod_kurzusfelvetel tanev="2025/26 I." egyetem="Miskolci Egyetem">
+
+    <hallgato>
+        <hnev>Varga Eszter</hnev>
+        <szulev>2004</szulev>
+        <szak evf="3">Mérnökinformatika</szak>
+    </hallgato>
+
+    <kurzusok>
+
+        <kurzus id="F9PSJA_e1">
+            <kurzusnev>Elektrotechnika-elektronika</kurzusnev>
+            <kredit>5</kredit>
+            <hely>3. előadó</hely>
+            <idopont>Hétfő 08:00-10:00</idopont>
+            <oktato>Szabó Norbert</oktato>
+        </kurzus>
+
+        <kurzus id="F9PSJA_e2" jovahagyas="igen" nyelv="magyar">
+            <kurzusnev>Webtechnológiák I.</kurzusnev>
+            <kredit>5</kredit>
+            <hely>5. előadó</hely>
+            <idopont>Hétfő 10:00-12:00</idopont>
+            <oktato>Agárdi Anita</oktato>
+        </kurzus>
+
+        <kurzus id="F9PSJA_e3" jovahagyas="igen" nyelv="magyar">
+            <kurzusnev>Mobil programozás alapjai</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/101</hely>
+            <idopont>Hétfő 16:00-18:00</idopont>
+            <oktato>Agárdi Anita</oktato>
+            <oraado>Vay Dominika</oraado>
+        </kurzus>
+
+        <kurzus id="F9PSJA_e4">
+            <kurzusnev>Mesterséges intelligencia alapok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>32. előadó</hely>
+            <idopont>Kedd 10:00-12:00</idopont>
+            <oktato>Fazekas Levente</oktato>
+        </kurzus>
+
+        <kurzus id="F9PSJA_e5">
+            <kurzusnev>Webes adatkezelő környezetek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/202</hely>
+            <idopont>Szerda 8:00-10:00</idopont>
+            <oktato>Kovács László József</oktato>
+        </kurzus>
+
+        <kurzus id="F9PSJA_e6">
+            <kurzusnev>Unix rendszergazda</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/103</hely>
+            <idopont>Szerda 8:00-10:00</idopont>
+            <oktato>Baksa Attila</oktato>
+        </kurzus>
+
+        <kurzus id="F9PSJA_gy1">
+            <kurzusnev>Szakmai angol</kurzusnev>
+            <kredit>0</kredit>
+            <hely>A1/223</hely>
+            <idopont>Hétfő 12:00-14:00</idopont>
+            <oktato>Lévai-Asztalos Erzsébet</oktato>
+        </kurzus>
+
+        <kurzus id="F9PSJA_gy2">
+            <kurzusnev>Elektrotechnika-elektronika</kurzusnev>
+            <kredit>5</kredit>
+            <hely>A1/317</hely>
+            <idopont>Kedd 14:00-16:00</idopont>
+            <oktato>Kozsely Gábor</oktato>
+        </kurzus>
+
+        <kurzus id="F9PSJA_gy3">
+            <kurzusnev>Webtechnológiák I.</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/101</hely>
+            <idopont>Hétfő 14:00-16:00</idopont>
+            <oktato>Agárdi Anita</oktato>
+        </kurzus>
+
+        <kurzus id="F9PSJA_gy4">
+            <kurzusnev>Mobil programozás alapjai</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/101</hely>
+            <idopont>Hétfő 18:00-20:00</idopont>
+            <oktato>Agárdi Anita</oktato>
+        </kurzus>
+
+        <kurzus id="F9PSJA_gy5">
+            <kurzusnev>Mesterséges intelligencia alapok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>32. előadó</hely>
+            <idopont>Kedd 12:00-14:00</idopont>
+            <oktato>Fazekas Levente</oktato>
+        </kurzus>
+
+        <kurzus id="F9PSJA_gy6">
+            <kurzusnev>Webes adatkezelő környezetek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/103</hely>
+            <idopont>Szerda 10:00-12:00</idopont>
+            <oktato>Bednarik László</oktato>
+        </kurzus>
+
+        <kurzus id="F9PSJA_gy7">
+            <kurzusnev>Unix rendszergazda</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In/103</hely>
+            <idopont>Kedd 18:00-20:00</idopont>
+            <oktato>Baksa Attila</oktato>
+        </kurzus>
+
+    </kurzusok>
+</Neptunkod_kurzusfelvetel>
