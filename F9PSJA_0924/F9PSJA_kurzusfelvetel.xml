@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Neptunkod_kurzusfelvetel tanev="2025/26 I." egyetem="Miskolci Egyetem">
+<F9PSJA_kurzusfelvetel tanev="2025/26 I." egyetem="Miskolci Egyetem">
 
     <hallgato>
         <hnev>Varga Eszter</hnev>
@@ -31,7 +31,6 @@
             <kredit>5</kredit>
             <hely>In/101</hely>
             <idopont>Hétfő 16:00-18:00</idopont>
-            <oktato>Agárdi Anita</oktato>
             <oraado>Vay Dominika</oraado>
         </kurzus>
 
@@ -116,4 +115,4 @@
         </kurzus>
 
     </kurzusok>
-</Neptunkod_kurzusfelvetel>
+</F9PSJA_kurzusfelvetel>
