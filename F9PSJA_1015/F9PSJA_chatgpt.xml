@@ -1,0 +1,85 @@
+<Database name="EtteremRendeles">
+  <Foszakacs>
+    <Fkod>F001</Fkod>
+    <Nev>Kiss András</Nev>
+    <Eletkor>45</Eletkor>
+    <Vegzettseg>Mester szakács</Vegzettseg>
+  </Foszakacs>
+
+  <Etterem>
+    <Ekod>E101</Ekod>
+    <Nev>Napfény Étterem</Nev>
+    <Cim>
+      <Varos>Szeged</Varos>
+      <Utca>Tisza Lajos körút</Utca>
+      <Hazszam>12</Hazszam>
+    </Cim>
+    <Csillag>4</Csillag>
+    <Fkod>F001</Fkod>
+  </Etterem>
+
+  <Szakacs>
+    <Szkod>S001</Szkod>
+    <Nev>Nagy Péter</Nev>
+    <Reszleg>Hidegkonyha</Reszleg>
+    <Vegzettseg>Szakács</Vegzettseg>
+    <Ekod>E101</Ekod>
+  </Szakacs>
+
+  <Szakacs>
+    <Szkod>S002</Szkod>
+    <Nev>Molnár Anna</Nev>
+    <Reszleg>Melegkonyha</Reszleg>
+    <Vegzettseg>Szakács</Vegzettseg>
+    <Ekod>E101</Ekod>
+  </Szakacs>
+
+  <Gyakornok>
+    <Gykod>G001</Gykod>
+    <Nev>Szabó Lilla</Nev>
+    <Muszak>Délutáni</Muszak>
+    <Ekod>E101</Ekod>
+    <Gyakorlat>
+      <Kezdete>2025-01-15</Kezdete>
+      <Idotartama>3 hónap</Idotartama>
+    </Gyakorlat>
+  </Gyakornok>
+
+  <Vendeg>
+    <Vkod>V001</Vkod>
+    <Nev>Tóth Gergely</Nev>
+    <Eletkor>32</Eletkor>
+    <Cim>
+      <Varos>Szeged</Varos>
+      <Utca>Rókusi körút</Utca>
+      <Hazszam>45</Hazszam>
+    </Cim>
+  </Vendeg>
+
+  <Vendeg>
+    <Vkod>V002</Vkod>
+    <Nev>Kovács Márta</Nev>
+    <Eletkor>27</Eletkor>
+    <Cim>
+      <Varos>Szeged</Varos>
+      <Utca>Petőfi utca</Utca>
+      <Hazszam>18</Hazszam>
+    </Cim>
+  </Vendeg>
+
+  <Rendeles>
+    <Rkod>R001</Rkod>
+    <Osszeg>8500</Osszeg>
+    <Etel>Marhapörkölt galuskával</Etel>
+    <Ekod>E101</Ekod>
+    <Vkod>V001</Vkod>
+  </Rendeles>
+
+  <Rendeles>
+    <Rkod>R002</Rkod>
+    <Osszeg>6200</Osszeg>
+    <Etel>Rántott sajt rizzsel</Etel>
+    <Ekod>E101</Ekod>
+    <Vkod>V002</Vkod>
+  </Rendeles>
+</Database>
