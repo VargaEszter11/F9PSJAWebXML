@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="NeptunAdatok">
+    <xs:complexType>
+      <xs:sequence>
+
+        <!-- Hallgatók -->
+        <xs:element name="Hallgato" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Neptun" type="xs:string"/>
+              <xs:element name="Nev" type="xs:string"/>
+              <xs:element name="SzuletesiDatum" type="xs:date"/>
+              <xs:element name="Cim">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Varos" type="xs:string"/>
+                    <xs:element name="Utca" type="xs:string"/>
+                    <xs:element name="Hazszam" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Email" type="xs:string" maxOccurs="unbounded"/>
+              <xs:element name="Telefonszam" type="xs:string" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="hid" type="xs:ID" use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Kurzusok -->
+        <xs:element name="Kurzus" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Kod" type="xs:string"/>
+              <xs:element name="Nev" type="xs:string"/>
+              <xs:element name="Kredit" type="xs:positiveInteger"/>
+              <xs:element name="Tipus" type="xs:string"/>
+              <xs:element name="TanarRef" type="xs:IDREF"/>
+            </xs:sequence>
+            <xs:attribute name="kid" type="xs:ID" use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Oktatók -->
+        <xs:element name="Oktato" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nev" type="xs:string"/>
+              <xs:element name="Titulus" type="xs:string"/>
+              <xs:element name="Beosztas" type="xs:string"/>
+              <xs:element name="Email" type="xs:string"/>
+              <xs:element name="IrodaRef" type="xs:IDREF"/>
+            </xs:sequence>
+            <xs:attribute name="oid" type="xs:ID" use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Tanszékek -->
+        <xs:element name="Tanszek" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nev" type="xs:string"/>
+              <xs:element name="Kod" type="xs:string"/>
+              <xs:element name="Epulet" type="xs:string"/>
+              <xs:element name="Telefon" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="did" type="xs:ID" use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Irodák -->
+        <xs:element name="Iroda" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Epuletszam" type="xs:string"/>
+              <xs:element name="Szoba" type="xs:string"/>
+              <xs:element name="EpuletNev" type="xs:string"/>
+              <xs:element name="Megjegyzes" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="iid" type="xs:ID" use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+        <!-- Beiratkozások -->
+        <xs:element name="Beiratkozas" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Felev" type="xs:string"/>
+              <xs:element name="Osztalyzat" type="xs:integer"/>
+              <xs:element name="Teljesitve" type="xs:string"/>
+              <xs:element name="Jeloles" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="bid" type="xs:ID" use="required"/>
+            <xs:attribute name="hallgatoRef" type="xs:IDREF" use="required"/>
+            <xs:attribute name="kurzusRef" type="xs:IDREF" use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+
+    <!-- Egyediség- és hivatkozás-kényszerek -->
+    <xs:key name="HallgatoKey">
+      <xs:selector xpath="Hallgato"/>
+      <xs:field xpath="@hid"/>
+    </xs:key>
+
+    <xs:key name="KurzusKey">
+      <xs:selector xpath="Kurzus"/>
+      <xs:field xpath="@kid"/>
+    </xs:key>
+
+    <xs:key name="OktatoKey">
+      <xs:selector xpath="Oktato"/>
+      <xs:field xpath="@oid"/>
+    </xs:key>
+
+    <xs:key name="IrodaKey">
+      <xs:selector xpath="Iroda"/>
+      <xs:field xpath="@iid"/>
+    </xs:key>
+
+    <xs:keyref name="Beiratkozas_HallgatoRef" refer="HallgatoKey">
+      <xs:selector xpath="Beiratkozas"/>
+      <xs:field xpath="@hallgatoRef"/>
+    </xs:keyref>
+
+    <xs:keyref name="Beiratkozas_KurzusRef" refer="KurzusKey">
+      <xs:selector xpath="Beiratkozas"/>
+      <xs:field xpath="@kurzusRef"/>
+    </xs:keyref>
+
+  </xs:element>
+
+</xs:schema>
