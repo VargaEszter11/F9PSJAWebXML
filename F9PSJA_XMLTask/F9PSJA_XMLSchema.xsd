@@ -65,7 +65,7 @@
               <xs:element name="Epulet" type="xs:string"/>
               <xs:element name="Telefon" type="xs:string"/>
             </xs:sequence>
-            <xs:attribute name="did" type="xs:ID" use="required"/>
+            <xs:attribute name="tid" type="xs:ID" use="required"/>
           </xs:complexType>
         </xs:element>
 

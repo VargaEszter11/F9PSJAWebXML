@@ -77,7 +77,7 @@
   </Oktato>
 
   <!-- Több tanszék példa (1:N: tanszek->oktato) -->
-  <Tanszek did="D1">
+  <Tanszek tid="D1">
     <Nev>Informatikai Tanszek</Nev>
     <Kod>INF</Kod>
     <Epulet>A épület</Epulet>
@@ -85,7 +85,7 @@
     <!-- Több oktató kapcsolódik (FK-k az oktato elemekben hivatkoznak a tanszekre) -->
   </Tanszek>
 
-  <Tanszek did="D2">
+  <Tanszek tid="D2">
     <Nev>Matematika Tanszek</Nev>
     <Kod>MTA</Kod>
     <Epulet>B épület</Epulet>
