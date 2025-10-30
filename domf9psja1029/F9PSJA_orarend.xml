@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE F9PSJA_orarend SYSTEM "F9PSJA_orarend.dtd">
+<F9PSJA_orarend>
+    <ora id="01" tipus="eloadas">
+        <targy>Elektronika-elektrotechnika</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>8:00</tol>
+            <ig>10:00</ig>
+        </idopont>
+        
+        <helyszin>3. előadó</helyszin>
+        <oktato>Szabó Norbert</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="02" tipus="eloadas">
+        <targy>Web technológiák 1.</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>10:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+
+        <helyszin>5. előadó</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="03" tipus="eloadas">
+        <targy>Angol műszaki szaknyelv 1.</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>12:00</tol>
+            <ig>14:00</ig>
+        </idopont>
+
+        <helyszin>7. előadó</helyszin>
+        <oktato>Nagyné Varga Orsolya</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+    <ora id="04" tipus="gyakorlat">
+        <targy>Web technológiák 1.</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>14:00</tol>
+            <ig>16:00</ig>
+        </idopont>
+
+        <helyszin>Infó épület 1. emelet 101. terem</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+     <ora id="05" tipus="eloadas">
+        <targy>Mobil programozási alapok</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>16:00</tol>
+            <ig>18:00</ig>
+        </idopont>
+
+        <helyszin>Infó épület 1. emelet 101. terem</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+     <ora id="06" tipus="gyakorlat">
+        <targy>Mobil programozási alapok</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>18:00</tol>
+            <ig>20:00</ig>
+        </idopont>
+
+        <helyszin>Infó épület 1. emelet 101. terem</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+
+      <ora id="07" tipus="eloadas">
+        <targy>Mesterséges Intelligencia alapok</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>10:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+
+        <helyszin>32. előadó</helyszin>
+        <oktato>Kunné Dr. Tamás Judit, Fazekas Levente Áron</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+      <ora id="08" tipus="gyakorlat">
+        <targy>Mesterséges Intelligencia alapok</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>12:00</tol>
+            <ig>14:00</ig>
+        </idopont>
+
+        <helyszin>32. előadó</helyszin>
+        <oktato>Kunné Dr. Tamás Judit, Fazekas Levente Áron</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+      <ora id="09" tipus="gyakorlat">
+        <targy>Elektrotechnika-elektronika</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>14:00</tol>
+            <ig>16:00</ig>
+        </idopont>
+
+        <helyszin>A1/317.</helyszin>
+        <oktato>Dr. Kozsely Gábor</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+      <ora id="10" tipus="gyakorlat">
+        <targy>UNIX rendszergazda</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>17:00</tol>
+            <ig>19:00</ig>
+        </idopont>
+
+        <helyszin>Infó épület 2. emelet 202. terem</helyszin>
+        <oktato>Dr. Baksa Attila</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+
+     <ora id="11" tipus="eloadas">
+        <targy>UNIX rendszergazda</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>08:00</tol>
+            <ig>10:00</ig>
+        </idopont>
+
+        <helyszin>Infó épület 1. emelet 103. terem</helyszin>
+        <oktato>Dr. Baksa Attila</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+     <ora id="12" tipus="eloadas">
+        <targy>Webes adatkezelő környezetek</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>08:00</tol>
+            <ig>10:00</ig>
+        </idopont>
+
+        <helyszin>A1/310,</helyszin>
+        <oktato>Dr. Kovács László József</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+     <ora id="13" tipus="gyakorlat">
+        <targy>Webes adatkezelő környezetek</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>10:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+
+        <helyszin>Infó épület 1. emelet 103. terem</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Mérnökinformatikus BSc</szak>
+    </ora>
+</F9PSJA_orarend>
