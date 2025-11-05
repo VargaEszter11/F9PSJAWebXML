@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<F9PSJA_orarend>
+    
+  <!-- HÉTFŐ -->
+    
+  <ora id="h1" tipus="eloadas">
+        
+    <targy>Elektrotechnika-elektronika</targy>
+        
+    <idopont>
+            
+      <nap>Hétfő</nap>
+            
+      <tol>08:00</tol>
+            
+      <ig>10:00</ig>
+          
+    </idopont>
+        
+    <helyszin>3. eloado</helyszin>
+        
+    <oktato>Szabó Norbert</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+    <oraado>Dr. Kovács Péter</oraado>
+  </ora>
+    
+  <ora id="h2" tipus="eloadas">
+        
+    <targy>Webtechnológiák I.</targy>
+        
+    <idopont>
+            
+      <nap>Hétfő</nap>
+            
+      <tol>10:00</tol>
+            
+      <ig>12:00</ig>
+          
+    </idopont>
+        
+    <helyszin>5. eloado</helyszin>
+        
+    <oktato>Agárdi Anita</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+    
+  <ora id="h3" tipus="eloadas">
+        
+    <targy>Szakmai angol</targy>
+        
+    <idopont>
+            
+      <nap>Hétfő</nap>
+            
+      <tol>12:00</tol>
+            
+      <ig>14:00</ig>
+          
+    </idopont>
+        
+    <helyszin>A1/223</helyszin>
+        
+    <oktato>Lévai-Asztalos Erzsébet</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+    
+  <ora id="h4" tipus="eloadas">
+        
+    <targy>Webtechnológiák I.</targy>
+        
+    <idopont>
+            
+      <nap>Hétfő</nap>
+            
+      <tol>14:00</tol>
+            
+      <ig>16:00</ig>
+          
+    </idopont>
+        
+    <helyszin>In/101</helyszin>
+        
+    <oktato>Agárdi Anita</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+    
+  <ora id="h5" tipus="eloadas">
+        
+    <targy>Mobil programozás alapjai</targy>
+        
+    <idopont>
+            
+      <nap>Hétfő</nap>
+            
+      <tol>16:00</tol>
+            
+      <ig>18:00</ig>
+          
+    </idopont>
+        
+    <helyszin>In/101</helyszin>
+        
+    <oktato>Agárdi Anita</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+    
+  <ora id="h6" tipus="eloadas">
+        
+    <targy>Mobil programozás alapjai</targy>
+        
+    <idopont>
+            
+      <nap>Hétfő</nap>
+            
+      <tol>18:00</tol>
+            
+      <ig>20:00</ig>
+          
+    </idopont>
+        
+    <helyszin>In/101</helyszin>
+        
+    <oktato>Agárdi Anita</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+    
+  <!-- KEDD -->
+    
+  <ora id="k1" tipus="eloadas">
+        
+    <targy>Mesterséges intelligencia alapok</targy>
+        
+    <idopont>
+            
+      <nap>Kedd</nap>
+            
+      <tol>10:00</tol>
+            
+      <ig>12:00</ig>
+          
+    </idopont>
+        
+    <helyszin>32. eloado</helyszin>
+        
+    <oktato>Fazekas Levente</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+    
+  <ora id="k2" tipus="eloadas">
+        
+    <targy>Mesterséges intelligencia alapok</targy>
+        
+    <idopont>
+            
+      <nap>Kedd</nap>
+            
+      <tol>12:00</tol>
+            
+      <ig>14:00</ig>
+          
+    </idopont>
+        
+    <helyszin>32. eloado</helyszin>
+        
+    <oktato>Fazekas Levente</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+    
+  <ora id="k3" tipus="eloadas">
+        
+    <targy>Elektrotechnika-elektronika</targy>
+        
+    <idopont>
+            
+      <nap>Kedd</nap>
+            
+      <tol>14:00</tol>
+            
+      <ig>16:00</ig>
+          
+    </idopont>
+        
+    <helyszin>A1/317</helyszin>
+        
+    <oktato>Kozsely Gábor</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+    
+  <ora id="k4" tipus="eloadas">
+        
+    <targy>UNIX rendszergazda</targy>
+        
+    <idopont>
+            
+      <nap>Kedd</nap>
+            
+      <tol>18:00</tol>
+            
+      <ig>20:00</ig>
+          
+    </idopont>
+        
+    <helyszin>In/103</helyszin>
+        
+    <oktato>Baksa Attila</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+    
+  <!-- SZERDA -->
+    
+  <ora id="s1" tipus="eloadas">
+        
+    <targy>Webes adatkezelő környezetek</targy>
+        
+    <idopont>
+            
+      <nap>Szerda</nap>
+            
+      <tol>08:00</tol>
+            
+      <ig>10:00</ig>
+          
+    </idopont>
+        
+    <helyszin>In/202</helyszin>
+        
+    <oktato>Kovács László</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+    
+  <ora id="s2" tipus="eloadas">
+        
+    <targy>UNIX rendszergazda</targy>
+        
+    <idopont>
+            
+      <nap>Szerda</nap>
+            
+      <tol>08:00</tol>
+            
+      <ig>10:00</ig>
+          
+    </idopont>
+        
+    <helyszin>In/103</helyszin>
+        
+    <oktato>Baksa Attila</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+    
+  <ora id="s3" tipus="eloadas">
+        
+    <targy>Webes adatkezelő környezetek</targy>
+        
+    <idopont>
+            
+      <nap>Szerda</nap>
+            
+      <tol>10:00</tol>
+            
+      <ig>12:00</ig>
+          
+    </idopont>
+        
+    <helyszin>In/103</helyszin>
+        
+    <oktato>Bednarik László</oktato>
+        
+    <szak>Mérnökinformatika</szak>
+      
+  </ora>
+  
+</F9PSJA_orarend>

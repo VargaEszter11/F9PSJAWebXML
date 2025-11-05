@@ -1,0 +1,9 @@
+
+2.) Az első kurzus adatai:
+ID: h1
+Típus: eloadas
+Tantárgy: Elektrotechnika-elektronika
+Időpont: Hétfő 08:00 - 10:00
+Helyszín: 3. eloado
+Oktató: Szabó Norbert
+Szak: Mérnökinformatika
