@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Neptunkod_XML.xml
-     Cél: oktatóval egyeztetés, Neptunkód alapú nyilvántartás.
-     Megjegyzések: minden többszörösen előforduló elem előtt komment található.
--->
 <NeptunAdatok xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="F9PSJA_XMLSchema.xsd">
 
-  <!-- Több hallgató példa -->
   <!-- Hallgató 1 -->
   <Hallgato hid="H1">
     <Neptun>KABC12</Neptun>
@@ -16,10 +11,10 @@
       <Utca>Piac utca</Utca>
       <Hazszam>5</Hazszam>
     </Cim>
-    <!-- Többértékű tulajdonság: e-mail címek (legalább 2 példa) -->
+    <!-- Többértékű tulajdonság -->
     <Email>anna.horvath@gmail.com</Email>
     <Email>horvath.anna@uni.hu</Email>
-    <!-- Többértékű tulajdonság: telefonszam -->
+    <!-- Többértékű tulajdonság -->
     <Telefonszam>+36-30-123-4567</Telefonszam>
     <Telefonszam>+36-20-765-4321</Telefonszam>
   </Hallgato>
@@ -38,14 +33,13 @@
     <Telefonszam>+36-70-111-2222</Telefonszam>
   </Hallgato>
 
-  <!-- Több kurzus példa -->
   <!-- Kurzus 1 -->
   <Kurzus kid="K1">
     <Kod>INF1</Kod>
     <Nev>Bevezetés az informatikába</Nev>
     <Kredit>5</Kredit>
     <Tipus>Előadás</Tipus>
-    <TanarRef>TA1</TanarRef> <!-- FK: tanar aki oktatja (1:N) -->
+    <TanarRef>TA1</TanarRef> <!-- FK: tanar aki oktatja -->
   </Kurzus>
 
   <!-- Kurzus 2 -->
@@ -57,14 +51,13 @@
     <TanarRef>TA2</TanarRef>
   </Kurzus>
 
-  <!-- Több oktató példa -->
-  <!-- Oktató 1 (office: 1:1 kapcsolat - egy irodához rendelve) -->
+  <!-- Oktató 1 -->
   <Oktato oid="TA1">
     <Nev>Dr. Szabo Gabor</Nev>
     <Titulus>Egyetemi docens</Titulus>
     <Beosztas>Szoftverfejlesztés</Beosztas>
     <Email>gabor.szabo@uni.hu</Email>
-    <IrodaRef>I10</IrodaRef> <!-- 1:1 FK az Iroda elemre -->
+    <IrodaRef>I10</IrodaRef> <!-- FK az Iroda elemre -->
   </Oktato>
 
   <!-- Oktató 2 -->
@@ -76,15 +69,15 @@
     <IrodaRef>I11</IrodaRef>
   </Oktato>
 
-  <!-- Több tanszék példa (1:N: tanszek->oktato) -->
+  <!-- Tanszék1 -->
   <Tanszek tid="D1">
     <Nev>Informatikai Tanszek</Nev>
     <Kod>INF</Kod>
     <Epulet>A épület</Epulet>
     <Telefon>+36-52-444-000</Telefon>
-    <!-- Több oktató kapcsolódik (FK-k az oktato elemekben hivatkoznak a tanszekre) -->
   </Tanszek>
 
+  <!-- Tanszék 2 -->
   <Tanszek tid="D2">
     <Nev>Matematika Tanszek</Nev>
     <Kod>MTA</Kod>
@@ -92,7 +85,7 @@
     <Telefon>+36-52-444-100</Telefon>
   </Tanszek>
 
-  <!-- Iroda (1:1 with Oktato) -->
+  <!-- Iroda 1 -->
   <Iroda iid="I10">
     <Epuletszam>A1</Epuletszam>
     <Szoba>203</Szoba>
@@ -100,6 +93,7 @@
     <Megjegyzes>Az oktatók irodája</Megjegyzes>
   </Iroda>
 
+  <!-- Iroda 2 -->
   <Iroda iid="I11">
     <Epuletszam>B2</Epuletszam>
     <Szoba>101</Szoba>
@@ -107,8 +101,6 @@
     <Megjegyzes>Közös használatú iroda</Megjegyzes>
   </Iroda>
 
-  <!-- N:M kapcsolat: Beiratkozas (Hallgato <-> Kurzus) with attributes (osztalyzat, félév, teljesitve) -->
-  <!-- Legalább két beiratkozas példa kell -->
   <!-- Beiratkozas 1 -->
   <Beiratkozas bid="B1" hallgatoRef="H1" kurzusRef="K1">
     <Felev>2024/1</Felev>
@@ -125,7 +117,7 @@
     <Jeloles>Gyakorlat teljesítve</Jeloles>
   </Beiratkozas>
 
-  <!-- Beiratkozas 3 (same student to another course) -->
+  <!-- Beiratkozas 3 -->
   <Beiratkozas bid="B3" hallgatoRef="H1" kurzusRef="K2">
     <Felev>2025/1</Felev>
     <Osztalyzat>3</Osztalyzat>
