@@ -1,0 +1,171 @@
+{"F9PSJA_orarend": {"ora": [
+    {
+        "targy": "Elektrotechnika-elektronika",
+        "oktato": "Szabó Norbert",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "08:00",
+            "nap": "Hétfő",
+            "ig": "10:00"
+        },
+        "_tipus": "eloadas",
+        "_id": "h1",
+        "helyszin": "3. eloado"
+    },
+    {
+        "targy": "Webtechnológiák I.",
+        "oktato": "Agárdi Anita",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "10:00",
+            "nap": "Hétfő",
+            "ig": "12:00"
+        },
+        "_tipus": "eloadas",
+        "_id": "h2",
+        "helyszin": "5. eloado"
+    },
+    {
+        "targy": "Szakmai angol",
+        "oktato": "Lévai-Asztalos Erzsébet",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "12:00",
+            "nap": "Hétfő",
+            "ig": "14:00"
+        },
+        "_tipus": "gyakorlat",
+        "_id": "h3",
+        "helyszin": "A1/223"
+    },
+    {
+        "targy": "Webtechnológiák I.",
+        "oktato": "Agárdi Anita",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "14:00",
+            "nap": "Hétfő",
+            "ig": "16:00"
+        },
+        "_tipus": "gyakorlat",
+        "_id": "h4",
+        "helyszin": "In/101"
+    },
+    {
+        "targy": "Mobil programozás alapjai",
+        "oktato": "Agárdi Anita",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "16:00",
+            "nap": "Hétfő",
+            "ig": "18:00"
+        },
+        "_tipus": "eloadas",
+        "_id": "h5",
+        "helyszin": "In/101"
+    },
+    {
+        "targy": "Mobil programozás alapjai",
+        "oktato": "Agárdi Anita",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "18:00",
+            "nap": "Hétfő",
+            "ig": "20:00"
+        },
+        "_tipus": "gyakorlat",
+        "_id": "h6",
+        "helyszin": "In/101"
+    },
+    {
+        "targy": "Mesterséges intelligencia alapok",
+        "oktato": "Fazekas Levente",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "10:00",
+            "nap": "Kedd",
+            "ig": "12:00"
+        },
+        "_tipus": "eloadas",
+        "_id": "k1",
+        "helyszin": "32. eloado"
+    },
+    {
+        "targy": "Mesterséges intelligencia alapok",
+        "oktato": "Fazekas Levente",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "12:00",
+            "nap": "Kedd",
+            "ig": "14:00"
+        },
+        "_tipus": "gyakorlat",
+        "_id": "k2",
+        "helyszin": "32. eloado"
+    },
+    {
+        "targy": "Elektrotechnika-elektronika",
+        "oktato": "Kozsely Gábor",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "14:00",
+            "nap": "Kedd",
+            "ig": "16:00"
+        },
+        "_tipus": "gyakorlat",
+        "_id": "k3",
+        "helyszin": "A1/317"
+    },
+    {
+        "targy": "UNIX rendszergazda",
+        "oktato": "Baksa Attila",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "18:00",
+            "nap": "Kedd",
+            "ig": "20:00"
+        },
+        "_tipus": "gyakorlat",
+        "_id": "k4",
+        "helyszin": "In/103"
+    },
+    {
+        "targy": "Webes adatkezelő környezetek",
+        "oktato": "Kovács László",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "08:00",
+            "nap": "Szerda",
+            "ig": "10:00"
+        },
+        "_tipus": "eloadas",
+        "_id": "s1",
+        "helyszin": "In/202"
+    },
+    {
+        "targy": "UNIX rendszergazda",
+        "oktato": "Baksa Attila",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "08:00",
+            "nap": "Szerda",
+            "ig": "10:00"
+        },
+        "_tipus": "eloadas",
+        "_id": "s2",
+        "helyszin": "In/103"
+    },
+    {
+        "targy": "Webes adatkezelő környezetek",
+        "oktato": "Bednarik László",
+        "szak": "Mérnökinformatika",
+        "idopont": {
+            "tol": "10:00",
+            "nap": "Szerda",
+            "ig": "12:00"
+        },
+        "_tipus": "gyakorlat",
+        "_id": "s3",
+        "helyszin": "In/103"
+    }
+]}}

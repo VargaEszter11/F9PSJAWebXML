@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Neptunkód Órarend 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .ora-blokk {
+            border: 1px solid #CCC;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+        h1 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>F9PSJA Órarend 2025</h1>
+
+    <button id="loadBtn">Órarend betöltése</button>
+
+    <div id="output"></div>
+
+    <script>
+        document.getElementById("loadBtn").addEventListener("click", loadJson);
+
+        async function loadJson() {
+            const output = document.getElementById("output");
+            output.innerHTML = "Betöltés...";
+
+            try {
+                // a fájl nevét NEPTUNKÓD-nak megfelelően állítsd be
+                const response = await fetch("orarendF9PSJA.json");
+                if (!response.ok) {
+                    output.innerHTML = "Nem sikerült betölteni a JSON-t!";
+                    return;
+                }
+
+                const data = await response.json();
+
+                const orarendObj = data["F9PSJA_orarend"] || data["F9PSJA_orarend"];
+                const orak = orarendObj["ora"];
+
+                output.innerHTML = "";
+
+                orak.forEach(ora => {
+                    const div = document.createElement("div");
+                    div.className = "ora-blokk";
+
+                    div.innerHTML += `<b>Tárgy:</b> ${ora.targy}<br>`;
+                    div.innerHTML += `<b>Helyszín:</b> ${ora.helyszin}<br>`;
+                    div.innerHTML += `<b>Oktató:</b> ${ora.oktato}<br>`;
+                    div.innerHTML += `<b>Szak:</b> ${ora.szak}<br>`;
+                    div.innerHTML += `<b>Nap:</b> ${ora.idopont.nap}<br>`;
+                    div.innerHTML += `<b>Idő:</b> ${ora.idopont.tol} - ${ora.idopont.ig}<br>`;
+
+                    output.appendChild(div);
+                });
+
+            } catch (err) {
+                output.innerHTML = "Hiba történt: " + err;
+            }
+        }
+    </script>
+
+</body>
+</html>
