@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hallgatoVM3DIR.xsl"?>
+<class>
+    <student id="01">
+        <vezeteknev>Vay</vezeteknev>
+        <keresztnev>Dominika</keresztnev>
+        <becenev>Domi</becenev>
+        <kor>22</kor>
+        <osztondij>22000</osztondij>
+    </student>
+</class>

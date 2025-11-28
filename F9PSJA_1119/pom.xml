@@ -19,10 +19,11 @@
 
 		<!-- Everit JSON Validator -->
 		<dependency>
-			<groupId>org.everit.json</groupId>
-			<artifactId>org.everit.json.schema</artifactId>
-			<version>1.14.2</version>
+			<groupId>com.github.everit-org</groupId>
+			<artifactId>json-schema</artifactId>
+			<version>1.5.1</version>
 		</dependency>
+
 
 	</dependencies>
 
