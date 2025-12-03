@@ -10,7 +10,7 @@ public class F9PSJADOMQuery {
         try {
             Document doc = DocumentBuilderFactory.newInstance()
                     .newDocumentBuilder()
-                    .parse(new File("F9PSJA_XML.xml"));
+                    .parse(new File("F9PSJA_XMLTask/F9PSJA_XML.xml"));
             doc.getDocumentElement().normalize();
 
             System.out.println("===== LEKÉRDEZÉSEK =====");

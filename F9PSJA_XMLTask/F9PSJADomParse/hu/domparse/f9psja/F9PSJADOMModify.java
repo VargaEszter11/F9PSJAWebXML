@@ -11,7 +11,7 @@ public class F9PSJADOMModify {
 
     public static void main(String[] args) {
         try {
-            File xmlFile = new File("F9PSJA_XML.xml");
+            File xmlFile = new File("F9PSJA_XMLTask/F9PSJA_XML.xml");
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc = builder.parse(xmlFile);
@@ -68,7 +68,7 @@ public class F9PSJADOMModify {
             Transformer transformer = TransformerFactory.newInstance().newTransformer();
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
-            transformer.transform(new DOMSource(doc), new StreamResult(new File("F9PSJA_XML_modified.xml")));
+            transformer.transform(new DOMSource(doc), new StreamResult(new File("F9PSJA_XMLTask/F9PSJA_XML_modified.xml")));
 
             System.out.println("\nMódosítások elvégezve és mentve: F9PSJA_XML_modified.xml");
 

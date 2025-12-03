@@ -9,13 +9,13 @@ public class F9PSJADOMRead {
 
     public static void main(String[] args) {
         try {
-            File xmlFile = new File("F9PSJA_XML.xml");
+            File xmlFile = new File("F9PSJA_XMLTask/F9PSJA_XML.xml");
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc = builder.parse(xmlFile);
             doc.getDocumentElement().normalize();
 
-            String outFileName = "F9PSJA_DOMRead_output.txt";
+            String outFileName = "F9PSJA_XMLTask/F9PSJA_DOMRead_output.txt";
             try (PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream(outFileName), "UTF-8"))) {
 
                 String rootName = doc.getDocumentElement().getNodeName();
