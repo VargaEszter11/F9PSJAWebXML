@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>F9PSJA Hallgatók</title>
+
+<style>
+    body {
+        font-family: Arial;
+        background:#f5f5f5;
+        margin:0;
+        padding:25px;
+    }
+
+    .card {
+        background:white;
+        padding:20px;
+        border-radius:8px;
+        border:1px solid #ddd;
+        max-width:900px;
+        margin:auto;
+        margin-bottom:25px;
+    }
+
+    h2 { margin-top:0; }
+    h3 { margin-top:0; }
+
+    label {
+        font-weight:bold;
+        display:inline-block;
+        margin-top:10px;
+        margin-right:5px;
+    }
+
+    input, select {
+        padding:5px;
+        border:1px solid #ccc;
+        border-radius:4px;
+        margin:5px;
+    }
+    
+    input[type="text"], input[type="email"] {
+        width:250px;
+    }
+    
+    select {
+        width:265px;
+    }
+    
+    input[type="file"] {
+        margin-left:5px;
+    }
+
+    button {
+        padding:8px 15px;
+        border:none;
+        border-radius:4px;
+        cursor:pointer;
+        font-size:14px;
+        margin:5px 0;
+    }
+
+    .btn-save { background:#28a745; color:white; }
+    .btn-export { background:#007bff; color:white; }
+    .btn-edit { background:#17a2b8; color:white; padding:6px 10px; }
+    .btn-del { background:#dc3545; color:white; padding:6px 10px; }
+
+    table {
+        width:100%;
+        border-collapse:collapse;
+        margin-top:15px;
+    }
+
+    th, td {
+        border:1px solid #ddd;
+        padding:10px;
+    }
+
+    th {
+        background:#eee;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <h2>F9PSJA Hallgatók</h2>
+    <h3>Új hallgató hozzáadása</h3>
+
+    Név: <input id="nameInput" type="text"><br>
+    Évfolyam: <input id="yearInput" type="text"><br>
+    Szak: <input id="majorInput" type="text" placeholder="PTI"><br>
+    Email: <input id="emailInput" type="email" placeholder="pti@pti.hu"><br>
+    NEPTUN kód: <input id="codeInput" type="text" placeholder="AAA-123"><br>
+    <button class="btn-save" onclick="saveStudent()">Mentés</button>
+</div>
+
+
+<div class="card">
+    <h3>Keresés:</h3>
+    <input id="searchInput" placeholder="nev" onkeyup="renderTable()"><br>
+
+    <h3>Rendezés:</h3>
+    <select id="sortSelect" onchange="sortStudents()">
+        <option value="">Nincs rendezés</option>
+        <option value="name">Név szerint</option>
+        <option value="year">Évfolyam szerint</option>
+    </select><br>
+
+    <h3>Export / Import JSON</h3>
+    <button class="btn-export" onclick="exportJSON()">Export JSON</button><br><br>
+
+    Import JSON: 
+    <input type="file" id="importFile" onchange="importJSON(event)">
+    Nincs fájl kiválasztva
+
+</div>
+
+
+<div class="card">
+    <h3>Hallgatók listája</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Évfolyam</th>
+                <th>Szak</th>
+                <th>Email</th>
+                <th>Neptun</th>
+                <th>Műveletek</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+
+
+<script>
+const STORAGE_KEY = "studentsDB";
+
+function loadDB() {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+}
+function saveDB(data) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}
+
+function saveStudent() {
+    const student = {
+        name: nameInput.value,
+        year: yearInput.value,
+        major: majorInput.value,
+        email: emailInput.value,
+        code: codeInput.value
+    };
+
+    let db = loadDB();
+    db.push(student);
+    saveDB(db);
+
+    clearInputs();
+    renderTable();
+}
+
+function clearInputs() {
+    nameInput.value = "";
+    yearInput.value = "";
+    majorInput.value = "";
+    emailInput.value = "";
+    codeInput.value = "";
+}
+
+function deleteStudent(index) {
+    let db = loadDB();
+    db.splice(index, 1);
+    saveDB(db);
+    renderTable();
+}
+
+function editStudent(index) {
+    let db = loadDB();
+    const s = db[index];
+
+    nameInput.value = s.name;
+    yearInput.value = s.year;
+    majorInput.value = s.major;
+    emailInput.value = s.email;
+    codeInput.value = s.code;
+
+    db.splice(index, 1);
+    saveDB(db);
+    renderTable();
+}
+
+function sortStudents() {
+    const type = sortSelect.value;
+    let db = loadDB();
+
+    if (type === "name") db.sort((a,b)=> a.name.localeCompare(b.name));
+    if (type === "year") db.sort((a,b)=> a.year.localeCompare(b.year));
+
+    saveDB(db);
+    renderTable();
+}
+
+function exportJSON() {
+    const data = loadDB();
+    const json = JSON.stringify(data, null, 2);
+    const blob = new Blob([json], {type: "application/json"});
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "students.json";
+    a.click();
+}
+
+function importJSON(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => {
+        try {
+            let imported = JSON.parse(reader.result);
+            
+            // If not an array, make it an array
+            if (!Array.isArray(imported)) {
+                imported = [imported];
+            }
+            
+            // Convert any field names to our format
+            const converted = imported.map(item => {
+                return {
+                    name: item.name || item.nev || item.Name || item.Név || "",
+                    year: item.year || item.evf || item.evfolyam || item.Year || item.Évfolyam || "",
+                    major: item.major || item.szak || item.Major || item.Szak || "",
+                    email: item.email || item.Email || "",
+                    code: item.code || item.neptun || item.Code || item.Neptun || item.NEPTUN || ""
+                };
+            });
+            
+            saveDB(converted);
+            renderTable();
+            alert("JSON sikeresen importálva! (" + converted.length + " hallgató)");
+        } catch (error) {
+            alert("Hibás JSON fájl! " + error.message);
+        }
+    };
+    reader.readAsText(file);
+}
+
+function renderTable() {
+    const db = loadDB();
+    const search = searchInput.value.toLowerCase();
+
+    let html = "";
+    db.forEach((s, i) => {
+        const matches = Object.values(s).some(v => (""+v).toLowerCase().includes(search));
+        if (matches) {
+            html += `
+                <tr>
+                    <td>${s.name}</td>
+                    <td>${s.year}</td>
+                    <td>${s.major}</td>
+                    <td>${s.email}</td>
+                    <td>${s.code}</td>
+                    <td>
+                        <button class="btn-edit" onclick="editStudent(${i})">Módosít</button>
+                        <button class="btn-del" onclick="deleteStudent(${i})">Törlés</button>
+                    </td>
+                </tr>
+            `;
+        }
+    });
+
+    tableBody.innerHTML = html;
+}
+
+renderTable();
+</script>
+
+</body>
+</html>
